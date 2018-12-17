@@ -1,0 +1,60 @@
+body {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Arial", sans-serif;
+}
+
+.main-menu {
+    width: 280px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    color: #fdd534;
+    text-decoration: none;
+    background-color: black;
+}
+
+.main-menu a:hover {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.main-menu > li {
+    position: relative;
+}
+
+.main-menu .sub-menu {
+    display: none;
+    position: relative;
+    left: 10px;
+    z-index: 10;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: black;
+    text-transform: none;
+    font-size: 15px;
+}
+
+/* Cелектор для подменю, если навести курсор на родительский элемент верхнего меню */
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+    color: white
+}
+
+.main-menu > li:hover .sub-menu li:hover {
+    background-color: red;
+    width: 235px
+}
