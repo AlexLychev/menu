@@ -4,33 +4,55 @@ body {
     margin: 0;
     padding: 0;
     background: url('img/bckgnd.png') no-repeat;
-    font-size: 16px;
-    line-height: 2;
-    font-family: "OpenSans", sans-serif;
-    font-weight: 600
 }
 
 .main-menu {
-    margin-top: 80px;
+    margin: 80px 0 0 0;
     padding: 0;
-    list-style: none;
-    text-transform: uppercase;
-    cursor: pointer;
 }
 
 .main-menu a {
     display: block;
-    margin-bottom: -1px;
-    padding: 8px 14px;
-    color: #fdd534;
-    text-decoration: none;
-/*    background-color: black;*/
-    opacity: 0.9
+    width: 280px;
+    height: 50px;
+    margin: 0 20px -1px 20px;
+    list-style: none;
+    cursor: pointer;
 }
 
-.main-menu a:hover {
+.main-menu li:nth-child(5),
+.main-menu li:nth-child(6) {
+    display: block;
+    height: 80px;
+}
+
+.main-menu li:hover {
     background-color: black;
     opacity: 0.8;
+}
+
+.main-menu li a {
+    padding: 10px 20px;
+    color: white;
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 3px 2px black;
+}
+
+.main-menu li:nth-child(5) a,
+.main-menu li:nth-child(6) a {
+    display: block;
+    padding: 20px 0 0 20px;
+    line-height: 20px;
+}
+
+.main-menu li:hover a {
+    color: #fdd534;
 }
 
 .main-menu > li {
@@ -51,7 +73,9 @@ body {
     font-size: 15px;
 }
 
-/* Cелектор для подменю, если навести курсор на родительский элемент верхнего меню */
+/*
+ Cелектор для подменю, если навести курсор на родительский элемент верхнего меню
+*/
 
 .main-menu > li:hover .sub-menu {
     display: block;
@@ -62,3 +86,4 @@ body {
     background-color: red;
     width: 240px
 }
+
